@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "825545838909",
+    "project_id": "washingcar-63515",
+    "storage_bucket": "washingcar-63515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825545838909:android:0c62c1384697f5cef33554",
+        "android_client_info": {
+          "package_name": "com.mert.arabaykamarezv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825545838909-29luu1mdpgp4ca65osg43negauss6vr9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYvmo1bNhMc5_SZj4ywkbCX4eCNo7KGQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825545838909-29luu1mdpgp4ca65osg43negauss6vr9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
