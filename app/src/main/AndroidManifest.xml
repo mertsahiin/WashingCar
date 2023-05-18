@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.mert.arabaykamarezv">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +16,13 @@
         android:theme="@style/Theme.ArabaYıkamaRezv"
         tools:targetApi="31">
         <activity
+            android:name=".MusteriJobAddActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".AdminJobActivity"
             android:exported="false" />
         <activity
@@ -25,10 +32,10 @@
             android:name=".MusteriGirisActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AdminInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".AdminInfoActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

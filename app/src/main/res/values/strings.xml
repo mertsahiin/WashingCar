@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ArabaYıkamaRezv</string>
+    <string name="title_activity_musteri_job_add">MusteriJobAddActivity</string>
 </resources>

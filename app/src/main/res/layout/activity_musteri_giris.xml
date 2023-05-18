@@ -7,10 +7,48 @@
     tools:context=".MusteriGirisActivity">
 
     <Button
-        android:id="@+id/deneme123"
+        android:id="@+id/MusteriSignin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="288dp" />
+        android:layout_marginTop="15dp"
+        android:onClick="Musterisignin"
+        android:text="SignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMusteriPassword" />
+
+    <Button
+        android:id="@+id/Musterisignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Musterisignup"
+        android:text="SignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MusteriSignin" />
+
+    <EditText
+        android:id="@+id/txtMusteriMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Mail"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtMusteriPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMusteriMail" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
