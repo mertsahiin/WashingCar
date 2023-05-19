@@ -16,7 +16,7 @@
         android:theme="@style/Theme.ArabaYıkamaRezv"
         tools:targetApi="31">
         <activity
-            android:name=".MusteriJobAddActivity"
+            android:name=".MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -35,7 +35,7 @@
             android:name=".AdminInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MusteriJobAddActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
