@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MusteriJobAddActivity">
 
+    <Button
+        android:id="@+id/jobadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="199dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
