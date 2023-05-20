@@ -46,7 +46,8 @@
         android:text="Save"
         map:layout_constraintBottom_toTopOf="@+id/MusteriDelBtn"
         map:layout_constraintEnd_toEndOf="parent"
-        map:layout_constraintStart_toStartOf="parent" />
+        map:layout_constraintStart_toStartOf="parent"
+        />
 
     <Button
         android:id="@+id/MusteriDelBtn"
@@ -71,7 +72,8 @@
         map:layout_constraintBottom_toTopOf="@+id/Plakatext"
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintStart_toStartOf="parent"
-        map:srcCompat="@drawable/indir" />
+        map:srcCompat="@drawable/indir"
+        android:onClick="MusteriImage"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
