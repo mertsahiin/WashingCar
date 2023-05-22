@@ -1,13 +1,16 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.mert.arabaykamarezv.R
+import com.mert.arabaykamarezv.adapter.JobAdapter
 import com.mert.arabaykamarezv.databinding.ActivityAdminInfoBinding
-import com.mert.arabaykamarezv.databinding.ActivityMainBinding
+import com.mert.arabaykamarezv.model.Jobs
 
 class AdminInfoActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAdminInfoBinding
@@ -52,11 +55,15 @@ class AdminInfoActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.add_job_item){
-            val intent = Intent(this,AdminJobActivity::class.java)
+            val intent = Intent(this, AdminJobActivity::class.java)
             intent.putExtra("info" ,"new")
             startActivity(intent)
         }
 
         return super.onOptionsItemSelected(item)
+    }
+    fun iseGit(view : View){
+        val intent = Intent(this,MusteriKonumRecycleActivity::class.java)
+        startActivity(intent)
     }
 }

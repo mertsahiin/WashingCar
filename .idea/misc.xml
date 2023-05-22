@@ -14,6 +14,14 @@
         <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCar/app/src/main/res/layout/activity_musteri_job_add.xml" value="0.1" />
         <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCar/app/src/main/res/layout/activity_musteri_job_add2.xml" value="0.1" />
         <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCar/app/src/main/res/layout/musterirecyclerrow.xml" value="0.1802536231884058" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/layout/activity_admin_info.xml" value="0.264" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/layout/activity_araba_konum.xml" value="0.2" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/layout/activity_musteri_bilgi.xml" value="0.1" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/layout/activity_musteri_job_add2.xml" value="0.1" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/layout/activity_musteri_konum_recycle.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/layout/recycler_row.xml" value="0.1" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/layout/recycler_row_konum.xml" value="0.19927536231884058" />
+        <entry key="..\:/Users/merte/AndroidStudioProjects/WashingCarr/app/src/main/res/menu/plaka_menu.xml" value="0.2296875" />
       </map>
     </option>
   </component>

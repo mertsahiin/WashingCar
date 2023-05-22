@@ -1,4 +1,4 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -33,7 +33,7 @@ class AdminGirisActivity : AppCompatActivity() {
                 println("Doğru")
                 auth.signInWithEmailAndPassword(eMail,password).addOnSuccessListener {
 
-                    val intent = Intent(this,AdminInfoActivity::class.java)
+                    val intent = Intent(this, AdminInfoActivity::class.java)
                     startActivity(intent)
                     finish()
                 }.addOnFailureListener {
@@ -52,7 +52,7 @@ class AdminGirisActivity : AppCompatActivity() {
                 println("Doğru")
                 auth.createUserWithEmailAndPassword(eMail,password).addOnSuccessListener {
                     println("oldu")
-                    val intent = Intent(this,AdminInfoActivity::class.java)
+                    val intent = Intent(this, AdminInfoActivity::class.java)
                     startActivity(intent)
                     finish()
                 }.addOnFailureListener {

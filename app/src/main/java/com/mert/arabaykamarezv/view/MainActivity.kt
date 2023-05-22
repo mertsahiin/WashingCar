@@ -1,4 +1,4 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -17,13 +17,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun adminGiris(view : View){
-    val intent = Intent(this,AdminGirisActivity::class.java)
+    val intent = Intent(this, AdminGirisActivity::class.java)
         startActivity(intent)
 
     }
 
     fun musteriGiris(view : View){
-        val intent = Intent(this,MusteriGirisActivity::class.java)
+        val intent = Intent(this, MusteriGirisActivity::class.java)
         startActivity(intent)
 
     }

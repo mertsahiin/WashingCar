@@ -1,4 +1,4 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

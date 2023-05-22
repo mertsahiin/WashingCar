@@ -1,11 +1,12 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.mert.arabaykamarezv.view.MusteriJobAddActivity
 import com.mert.arabaykamarezv.databinding.MusterirecyclerrowBinding
-import com.mert.arabaykamarezv.databinding.RecyclerRowBinding
+import com.mert.arabaykamarezv.model.MüsteriJobs
 
 class MjobsAdapter (val MjobList : ArrayList<MüsteriJobs>): RecyclerView.Adapter<MjobsAdapter.MjobsHolder>() {
     class MjobsHolder (val binding: MusterirecyclerrowBinding) : RecyclerView.ViewHolder(binding.root)
@@ -18,7 +19,7 @@ class MjobsAdapter (val MjobList : ArrayList<MüsteriJobs>): RecyclerView.Adapte
     override fun onBindViewHolder(holder: MjobsHolder, position: Int) {
         holder.binding.MusteriIlanText.text = MjobList.get(position).Plaka
         holder.itemView.setOnClickListener{
-            val intent = Intent(holder.itemView.context,MusteriJobAddActivity::class.java)
+            val intent = Intent(holder.itemView.context, MusteriJobAddActivity::class.java)
             intent.putExtra("info", "old")
             intent.putExtra("id",MjobList[position].id)
             holder.itemView.context.startActivity(intent)

@@ -1,11 +1,12 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.mert.arabaykamarezv.databinding.RecyclerRowBinding
-import kotlinx.coroutines.Job
+import com.mert.arabaykamarezv.model.Jobs
+import com.mert.arabaykamarezv.view.AdminJobActivity
 
 class JobAdapter (val Joblist : ArrayList<Jobs>) : RecyclerView.Adapter<JobAdapter.JobHolder>(){
     class JobHolder (val binding : RecyclerRowBinding) : RecyclerView.ViewHolder(binding.root)
@@ -18,7 +19,7 @@ class JobAdapter (val Joblist : ArrayList<Jobs>) : RecyclerView.Adapter<JobAdapt
     override fun onBindViewHolder(holder: JobHolder, position: Int) {
         holder.binding.recyclerViewTextView.text = Joblist.get(position).name
         holder.itemView.setOnClickListener{
-            val intent = Intent(holder.itemView.context,AdminJobActivity::class.java)
+            val intent = Intent(holder.itemView.context, AdminJobActivity::class.java)
             intent.putExtra("info" ,"old")
             intent.putExtra("id",Joblist[position].id)
             holder.itemView.context.startActivity(intent)

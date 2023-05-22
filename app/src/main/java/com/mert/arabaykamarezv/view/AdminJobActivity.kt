@@ -1,4 +1,4 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.view
 
 import android.Manifest
 import android.content.Intent
@@ -17,10 +17,9 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
+import com.mert.arabaykamarezv.R
 import com.mert.arabaykamarezv.databinding.ActivityAdminJobBinding
-import com.mert.arabaykamarezv.databinding.ActivityMainBinding
 import java.io.ByteArrayOutputStream
-import java.io.OutputStream
 import java.lang.Exception
 
 class AdminJobActivity : AppCompatActivity() {
@@ -45,7 +44,9 @@ class AdminJobActivity : AppCompatActivity() {
 
             binding.btnSave.visibility = View.VISIBLE
             binding.imageView.setImageResource(R.drawable.indir)
-            val selectedImageBackground = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.indir)
+            val selectedImageBackground = BitmapFactory.decodeResource(applicationContext.resources,
+                R.drawable.indir
+            )
             binding.imageView.setImageBitmap(selectedImageBackground)
         }else{
             binding.btnSave.visibility = View.INVISIBLE
@@ -119,7 +120,7 @@ class AdminJobActivity : AppCompatActivity() {
             }catch (e : Exception){
                 e.printStackTrace()
             }
-            val intent = Intent(this,AdminInfoActivity::class.java)
+            val intent = Intent(this, AdminInfoActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
 

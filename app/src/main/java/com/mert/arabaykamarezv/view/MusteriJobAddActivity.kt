@@ -1,4 +1,4 @@
-package com.mert.arabaykamarezv
+package com.mert.arabaykamarezv.view
 
 import android.Manifest
 import android.content.Context
@@ -15,7 +15,6 @@ import android.location.LocationManager
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
@@ -23,7 +22,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.google.android.gms.maps.CameraUpdate
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
@@ -31,8 +29,8 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.snackbar.Snackbar
+import com.mert.arabaykamarezv.R
 import com.mert.arabaykamarezv.databinding.ActivityMusteriJobAdd2Binding
-import com.mert.arabaykamarezv.model.musteriilan
 import java.io.ByteArrayOutputStream
 import java.lang.Exception
 
@@ -73,7 +71,9 @@ class MusteriJobAddActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.
             binding.Plakatext.setText("")
             binding.MusteriSaveBtn.visibility = View.VISIBLE
             binding.MusteriDelBtn.visibility = View.VISIBLE
-            val selectedImageBackGround = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.indir)
+            val selectedImageBackGround = BitmapFactory.decodeResource(applicationContext.resources,
+                R.drawable.indir
+            )
             binding.imageView2.setImageBitmap(selectedImageBackGround)
         }else{
             //binding.MusteriSaveBtn.visibility = View.INVISIBLE
@@ -252,7 +252,7 @@ class MusteriJobAddActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.
             }catch ( e : Exception){
                 e.printStackTrace()
             }
-            val intent = Intent(this,MusteriBilgiActivity::class.java)
+            val intent = Intent(this, MusteriBilgiActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
