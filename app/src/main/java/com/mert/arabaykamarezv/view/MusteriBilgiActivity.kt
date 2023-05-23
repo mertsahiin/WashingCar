@@ -22,6 +22,7 @@ class MusteriBilgiActivity : AppCompatActivity() {
         binding = ActivityMusteriBilgiBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        this.setTitle("Müşteri Bilgi")
 
         MjobList = ArrayList<MüsteriJobs>()
         mjobsAdapter = MjobsAdapter(MjobList)

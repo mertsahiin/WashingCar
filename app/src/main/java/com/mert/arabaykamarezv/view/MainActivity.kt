@@ -14,10 +14,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        this.setTitle("Giriş")
     }
 
     fun adminGiris(view : View){
-    val intent = Intent(this, AdminGirisActivity::class.java)
+        val intent = Intent(this, AdminGirisActivity::class.java)
         startActivity(intent)
 
     }

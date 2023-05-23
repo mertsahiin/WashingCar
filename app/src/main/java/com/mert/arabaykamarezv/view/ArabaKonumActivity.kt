@@ -72,6 +72,7 @@ class ArabaKonumActivity : AppCompatActivity(), OnMapReadyCallback ,GoogleMap.On
         db = Room.databaseBuilder(applicationContext,PlaceDatabase::class.java,"Places").fallbackToDestructiveMigration().build()
         placeDao = db.placeDao()
         binding.btnSaveKonum.isEnabled = false
+        this.setTitle("Araç Ekle")
     }
 
 
@@ -164,7 +165,7 @@ class ArabaKonumActivity : AppCompatActivity(), OnMapReadyCallback ,GoogleMap.On
         binding.btnSaveKonum.isEnabled = true
     }
     fun KonumKaydet(view : View){
-    val place = Place(binding.txtPlakaKonum.text.toString(),selectedLatitude!!,selectedLongitude!!)
+        val place = Place(binding.txtPlakaKonum.text.toString(),selectedLatitude!!,selectedLongitude!!)
         compositeDisposable.add(
             placeDao.insert(place)
                 .subscribeOn(Schedulers.io())

@@ -67,6 +67,7 @@ class AdminJobActivity : AppCompatActivity() {
             }
             cursor.close()
         }
+        this.setTitle("İşi Tamamla")
     }
 
     private fun smallerBitmap(image : Bitmap ,maximumSize : Int) : Bitmap{

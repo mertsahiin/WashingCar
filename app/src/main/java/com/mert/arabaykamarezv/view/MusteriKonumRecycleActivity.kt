@@ -34,6 +34,7 @@ class MusteriKonumRecycleActivity : AppCompatActivity() {
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(this::handlerResponse)
         )
+        this.setTitle("Paylaşılan İşler")
     }
     private fun handlerResponse(placeList : List<Place>){
         binding.recyclerViewKonum.layoutManager = LinearLayoutManager(this)
@@ -54,5 +55,6 @@ class MusteriKonumRecycleActivity : AppCompatActivity() {
             startActivity(intent)
         }
         return super.onOptionsItemSelected(item)
+
     }
 }

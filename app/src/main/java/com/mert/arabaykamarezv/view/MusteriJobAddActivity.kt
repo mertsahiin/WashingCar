@@ -99,6 +99,7 @@ class MusteriJobAddActivity : AppCompatActivity(), OnMapReadyCallback,GoogleMap.
         trackBoolean=false
         selectedLatitude= 0.0
         selectedLongitude=0.0
+        this.setTitle("Verilmiş İlanlar")
 
 
     }

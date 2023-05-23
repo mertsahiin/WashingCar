@@ -44,6 +44,8 @@
         android:layout_marginBottom="8dp"
         android:onClick="musterisave"
         android:text="Save"
+        android:background="@drawable/btn_bg"
+        android:textColor="#E3DADA"
         map:layout_constraintBottom_toTopOf="@+id/MusteriDelBtn"
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintStart_toStartOf="parent"
@@ -58,6 +60,8 @@
         android:layout_marginBottom="8dp"
         android:onClick="MusteriDel"
         android:text="Delete"
+        android:background="@drawable/btn_bg"
+        android:textColor="#E3DADA"
         map:layout_constraintBottom_toBottomOf="parent"
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintStart_toStartOf="parent" />

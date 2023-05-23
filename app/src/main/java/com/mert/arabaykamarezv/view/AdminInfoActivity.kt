@@ -45,6 +45,7 @@ class AdminInfoActivity : AppCompatActivity() {
         }catch (e : Exception){
             e.printStackTrace()
         }
+        this.setTitle("Yapılan İşler")
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

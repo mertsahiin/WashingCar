@@ -20,6 +20,7 @@ class AdminGirisActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         auth = Firebase.auth
+        this.setTitle("Admin Giriş")
     }
 
         fun SignInAdmin(view : View){
@@ -52,7 +53,7 @@ class AdminGirisActivity : AppCompatActivity() {
                 println("Doğru")
                 auth.createUserWithEmailAndPassword(eMail,password).addOnSuccessListener {
                     println("oldu")
-                    val intent = Intent(this, AdminInfoActivity::class.java)
+                    val intent = Intent(this, AdminGirisActivity::class.java)
                     startActivity(intent)
                     finish()
                 }.addOnFailureListener {

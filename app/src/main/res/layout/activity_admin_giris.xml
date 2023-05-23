@@ -6,17 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".view.AdminGirisActivity">
 
+
     <EditText
         android:id="@+id/txtadminPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:ems="10"
+        android:hint="Password"
         android:inputType="textPersonName"
+        android:password="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtadminMail"
-        android:hint="Password"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtadminMail" />
 
     <EditText
         android:id="@+id/txtadminMail"
@@ -32,23 +34,33 @@
 
     <Button
         android:id="@+id/btn_signUP"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="SignUpAdmin"
         android:text="Sign Up"
+        android:textColor="#E3DADA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtadminPassword"
-        android:onClick="SignUpAdmin"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtadminPassword" />
 
     <Button
         android:id="@+id/btn_signIn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="SignInAdmin"
         android:text="SignIn"
+        android:textColor="#E3DADA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtadminPassword"
-        android:onClick="SignInAdmin"/>
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtadminPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>

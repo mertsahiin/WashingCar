@@ -20,6 +20,7 @@ class MusteriGirisActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         auth = Firebase.auth
+        this.setTitle("Müşteri Giriş")
     }
 
     fun Musterisignin(view: View) {
@@ -33,7 +34,7 @@ class MusteriGirisActivity : AppCompatActivity() {
             println("Doğru")
             auth.signInWithEmailAndPassword(eMail, password).addOnSuccessListener {
 
-                val intent = Intent(this, MusteriJobAddActivity::class.java)
+                val intent = Intent(this, MusteriBilgiActivity::class.java)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener {
@@ -53,7 +54,7 @@ class MusteriGirisActivity : AppCompatActivity() {
             println("Doğru")
             auth.createUserWithEmailAndPassword(eMail, password).addOnSuccessListener {
                 println("oldu")
-                val intent = Intent(this, MusteriJobAddActivity::class.java)
+                val intent = Intent(this, MusteriGirisActivity::class.java)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener {
