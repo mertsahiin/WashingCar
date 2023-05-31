@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.room.Room
 import com.mert.arabaykamarezv.R
@@ -56,5 +57,9 @@ class MusteriKonumRecycleActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
 
+    }
+    fun isleriGoruntule(view : View){
+        val intent = Intent(this,AdminInfoActivity::class.java)
+        startActivity(intent)
     }
 }

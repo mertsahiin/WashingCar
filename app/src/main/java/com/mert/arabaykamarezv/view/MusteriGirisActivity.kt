@@ -9,6 +9,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import com.mert.arabaykamarezv.databinding.ActivityMusteriGirisBinding
+import com.mert.arabaykamarezv.databinding.MusterirecyclerrowBinding
 
 class MusteriGirisActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
@@ -34,7 +35,7 @@ class MusteriGirisActivity : AppCompatActivity() {
             println("Doğru")
             auth.signInWithEmailAndPassword(eMail, password).addOnSuccessListener {
 
-                val intent = Intent(this, MusteriBilgiActivity::class.java)
+                val intent = Intent(this, MusterirecyclerrowBinding::class.java)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener {

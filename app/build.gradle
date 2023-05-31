@@ -36,7 +36,8 @@ android {
         viewBinding = true
     }
 }
-
+def retrofitVersion = '2.3.0'
+def rxJavaVersion = '2.1.1'
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -60,4 +61,10 @@ dependencies {
 
     implementation("androidx.room:room-rxjava3:$room_version")
     implementation "io.reactivex.rxjava3:rxandroid:3.0.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxJavaVersion"
 }
