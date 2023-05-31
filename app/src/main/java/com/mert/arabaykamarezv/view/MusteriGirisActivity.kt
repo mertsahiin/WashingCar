@@ -35,7 +35,7 @@ class MusteriGirisActivity : AppCompatActivity() {
             println("Doğru")
             auth.signInWithEmailAndPassword(eMail, password).addOnSuccessListener {
 
-                val intent = Intent(this, MusterirecyclerrowBinding::class.java)
+                val intent = Intent(this, MusteriBilgiActivity::class.java)
                 startActivity(intent)
                 finish()
             }.addOnFailureListener {
